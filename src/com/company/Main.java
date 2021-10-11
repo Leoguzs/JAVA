@@ -1,64 +1,87 @@
 package com.company;
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        //Estructura If
-        /*if(condicion){
-
-        }else if {
-
-        }else{
-
+	// control de flujo
+        /*switch(condicion){
+            case 1:
+                codigo
+            break;
+            case 1:
+                codigo
+            break;
+            default:
+                break;
         }*/
+        /*Scanner sc = new Scanner(System.in);
 
-        /*System.out.println("ingresa tu edad");
-        Scanner sc = new Scanner(System.in);
-        int edad = sc.nextInt();
-        System.out.println("Cual es tu nombre?");
+
+        System.out.println("Ingresa un numero");
+        int numero1 = sc.nextInt();
+        System.out.println("Ingresa otro numero");
+        int numero2 = sc.nextInt();
+        System.out.println("Ingresa la operacion deseada:\n1) Suma \n2) Resta" +
+                "\n3) Multiplicación \n4) División");
+        int operacion = sc.nextInt();
         sc.nextLine();
-        String nombre = sc.nextLine();
+        float resultado = 0;
 
-        if(edad>=18){
-            System.out.println(nombre + " puedes votar");
-        } else {
-            System.out.println("Aun no puedes votar, " + nombre + ":(");
+        switch (operacion){
+            case 1:
+                resultado = numero1+numero2;
+                break;
+            case 2:
+                resultado = numero1 - numero2;
+                break;
+            case 3:
+                resultado = numero1*numero2;
+                break;
+            case 4:
+                resultado = numero1/numero2;
+                break;
+            default:
+                System.out.println("La operacion que seleccionaste es inválida");
+                break;
         }
-        sc.close();*/
-        /* Solicitar al usuario 3 angulos de un triangulo y determinar si el triangulo
-          es válido
-         */
-       /* int triangulo=180;
-        System.out.println("Ingresa angulo 1");
-        Scanner sc=  new Scanner (System.in);
-        int angulo1 = sc.nextInt();
-        System.out.println("Ingresa angulo 2");
-        sc.nextLine();
-        int angulo2 = sc.nextInt();
-        System.out.println("Ingresa angulo 3");
-        sc.nextLine();
-        int angulo3 = sc.nextInt();
+        sc.close();
+        System.out.println(resultado);*/
 
-        if(angulo1+angulo3+angulo2==triangulo){
-            System.out.println("Indeed, it's a triangle");
-        } else {
-            System.out.println("no es un triangulo ;(");
-        }*/
-
-
-        //Pedir un año al usuario por consola, y determinar si el
-        //año es bisiesto.
-        System.out.println("Ingresa el año que quieras, chaval");
         Scanner sc = new Scanner(System.in);
-        int year = sc.nextInt();
-        if((year%100!=0)&&(year%4==0)) {
-            System.out.printf("Es bisiesto <3");
-        } else {
-            System.out.println("no es bisiesto :(");
-        }
 
+        System.out.println("Escribe el numero de día de la semana");
+        int numero = sc.nextInt();
+
+
+
+        switch (numero){
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miercoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sabado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.out.println("Debe de ser un numero del 1-7 :p");
+                break;
+
+        }
     }
 }
