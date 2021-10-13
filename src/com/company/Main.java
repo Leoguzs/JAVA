@@ -5,82 +5,68 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// control de flujo
-        /*switch(condicion){
-            case 1:
-                codigo
-            break;
-            case 1:
-                codigo
-            break;
-            default:
-                break;
+	// Ciclo for
+        /*
+        for (contador = 0; contador < numero; contador ++) {
+
         }*/
-        /*Scanner sc = new Scanner(System.in);
-
-
-        System.out.println("Ingresa un numero");
-        int numero1 = sc.nextInt();
-        System.out.println("Ingresa otro numero");
-        int numero2 = sc.nextInt();
-        System.out.println("Ingresa la operacion deseada:\n1) Suma \n2) Resta" +
-                "\n3) Multiplicación \n4) División");
-        int operacion = sc.nextInt();
-        sc.nextLine();
-        float resultado = 0;
-
-        switch (operacion){
-            case 1:
-                resultado = numero1+numero2;
-                break;
-            case 2:
-                resultado = numero1 - numero2;
-                break;
-            case 3:
-                resultado = numero1*numero2;
-                break;
-            case 4:
-                resultado = numero1/numero2;
-                break;
-            default:
-                System.out.println("La operacion que seleccionaste es inválida");
-                break;
-        }
+        /*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe un numero");
+        int numero = sc.nextInt();
         sc.close();
-        System.out.println(resultado);*/
 
+        for(int i = 1; i<=10; i++){
+            System.out.println(numero + "x" + i + "=" + ( numero*i));
+        } */
+        /*Scanner sc = new Scanner(System.in);
+        System.out.println("Dame un numero");
+        int numero = sc.nextInt();
+        sc.close();
+        int inicio1=0, inicio2=1, sumaInicios= inicio1+inicio2;
+        System.out.println(inicio1);
+
+        for(int i= 0; i<numero; i++){
+            System.out.println(sumaInicios);
+
+            sumaInicios = inicio1 + inicio2;
+            inicio1=inicio2;
+            inicio2=sumaInicios;
+        } */
+       /* Scanner sc = new Scanner(System.in);
+        System.out.println("Adivina el numero secreto");
+        int numero = sc.nextInt();
+        int numeroSecreto=47;
+
+        while(numero != numeroSecreto){
+            System.out.println("No has encontrado el número secreto");
+            numero = sc.nextInt();
+        }
+        System.out.println("Eres la ostia, lo adivinaste!!!!");
+        sc.close(); */
+/*
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Escribe el numero de día de la semana");
+        int numero = 0;
+        int numeroSecreto=47;
+        do {
+            System.out.println("Adivina el numero secreto");
+            numero = sc.nextInt();
+        }
+        while(numero != numeroSecreto);
+        System.out.println("Eres la ostia, lo adivinaste!!!!");
+        sc.close(); */
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingresa un numero");
         int numero = sc.nextInt();
 
+        int factorial = numero -1, multiplicación= numero  * factorial;
 
-
-        switch (numero){
-            case 1:
-                System.out.println("Lunes");
-                break;
-            case 2:
-                System.out.println("Martes");
-                break;
-            case 3:
-                System.out.println("Miercoles");
-                break;
-            case 4:
-                System.out.println("Jueves");
-                break;
-            case 5:
-                System.out.println("Viernes");
-                break;
-            case 6:
-                System.out.println("Sabado");
-                break;
-            case 7:
-                System.out.println("Domingo");
-                break;
-            default:
-                System.out.println("Debe de ser un numero del 1-7 :p");
-                break;
+        while (factorial !=1) {
+            System.out.println(multiplicación);
+            factorial--;
+            multiplicación=multiplicación*factorial;
 
         }
     }
